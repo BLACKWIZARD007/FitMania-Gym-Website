@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamstring Exercises</title>
+
+    <style>
+        /* Universal styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background: #121212; 
+            color: #c8d6e5;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .heading h2 {
+            font-size: 32px;
+            background: #121212;
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 8px;
+            border: 2px solid #27ae60;
+            color: #27ae60;
+        }
+
+        .exercises {
+            width: 90%;
+            margin: auto;
+            padding-bottom: 40px;
+        }
+
+        .box-container, 
+        .box-container1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .box {
+            background: #121212; 
+            text-align: center;
+            border-radius: 12px;
+            padding: 15px;
+            transition: .3s;
+            border: 1px solid #1f3b4d;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            border-color: #27ae60;
+        }
+
+        .box img {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            object-fit: cover;
+            background: black;
+        }
+
+        h3 {
+            font-size: 16px;
+            margin: 8px 0;
+            font-weight: 500;
+        }
+
+        strong {
+            color: #27ae60;
+        }
+
+        /* Back Button */
+        .back-btn {
+            width: 200px;
+            margin: 40px auto;
+            display: block;
+            text-align: center;
+            padding: 12px 0;
+            font-size: 18px;
+            background: #27ae60;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #219150;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section class="exercises" id="exercises">
+        
+        <div class="heading">
+            <h2>HAMSTRINGS EXERCISES</h2>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/HB1.gif">
+                <h3>MACHINE HAMSTRING CURL</h3>
+                <h3><strong>Difficulty:</strong> Beginner</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/HB2.gif">
+                <h3>DB GLUTE BRIDGE</h3>
+                <h3><strong>Difficulty:</strong> Beginner</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/HB3.gif">
+                <h3>STAGGERED DEADLIFT</h3>
+                <h3><strong>Difficulty:</strong> Beginner</h3>
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="box-container1">
+
+            <div class="box">
+                <img src="images/HI1.gif">
+                <h3>DUMBBELL ROMANIAN DEADLIFT</h3>
+                <h3><strong>Difficulty:</strong> Intermediate</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/HI2.gif">
+                <h3>BARBELL ROMANIAN DEADLIFT</h3>
+                <h3><strong>Difficulty:</strong> Intermediate</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/HI3.gif">
+                <h3>STIFF LEG DEADLIFT</h3>
+                <h3><strong>Difficulty:</strong> Intermediate</h3>
+            </div>
+
+        </div>
+
+        <!-- BACK BUTTON -->
+        <a href="index.html" class="back-btn">← Back to Home</a>
+
+
+    </section>
+
+</body>
+</html>

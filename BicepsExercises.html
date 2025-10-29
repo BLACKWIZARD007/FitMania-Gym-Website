@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitMania — Biceps Exercises</title>
+<style>
+/* GLOBAL THEME */
+body {
+    background: #121212;
+    color: #EDEDED;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #222;
+}
+::-webkit-scrollbar-thumb {
+    background: #4ADE80;
+    border-radius: 8px;
+}
+
+/* Heading */
+.heading {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.heading span {
+    font-size: 3.2rem;
+    color: #4ADE80;
+    border: 1px solid #4ADE80;
+    padding: 0.7rem 2.4rem;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* Grid layout */
+.box-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 25px;
+}
+
+/* Exercise Card */
+.box {
+    background: #1E1E1E;
+    border-radius: 12px;
+    padding: 18px;
+    text-align: center;
+    border: 1px solid #2a2a2a;
+    transition: .3s ease;
+}
+
+.box:hover {
+    box-shadow: 0 4px 12px rgba(74, 222, 128, 0.25);
+    transform: translateY(-4px);
+}
+
+/* Exercise GIFs */
+.box img {
+    width: 230px;
+    height: 230px;
+    object-fit: contain;
+    background: #0b0b0b;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Text Styling */
+.box h3 {
+    font-size: 1.0rem;
+    margin-top: 12px;
+    font-weight: 500;
+    color: #D1D1D1;
+}
+
+.box h3 strong {
+    color: #4ADE80;
+}
+
+/* Back Button */
+.back-btn {
+    display: block;
+    width: 220px;
+    margin: 40px auto;
+    padding: 12px;
+    text-align: center;
+    background: #4ADE80;
+    color: #000;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.back-btn:hover {
+    opacity: 0.85;
+}
+</style>
+</head>
+
+<body>
+
+<section class="exercises" id="exercises">
+    <div class="heading">
+        <h2><span>BICEPS WORKOUTS</span></h2>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/BB1.gif" alt="">
+            <h3>Barbell Curl</h3>
+            <h3><strong>Difficulty:</strong> Beginner</h3>
+        </div>
+
+        <div class="box">
+            <img src="images/BB2.gif" alt="">
+            <h3>Dumbbell Curl</h3>
+            <h3><strong>Difficulty:</strong> Beginner</h3>
+        </div>
+
+        <div class="box">
+            <img src="images/BB3.gif" alt="">
+            <h3>Dumbbell Hammer Curl</h3>
+            <h3><strong>Difficulty:</strong> Beginner</h3>
+        </div>
+
+        <div class="box">
+            <img src="images/BI1.gif" alt="">
+            <h3>Chinups</h3>
+            <h3><strong>Difficulty:</strong> Intermediate</h3>
+        </div>
+
+        <div class="box">
+            <img src="images/BI2.gif" alt="">
+            <h3>Preacher Curl</h3>
+            <h3><strong>Difficulty:</strong> Intermediate</h3>
+        </div>
+
+        <div class="box">
+            <img src="images/BI3.gif" alt="">
+            <h3>Concentration Curl</h3>
+            <h3><strong>Difficulty:</strong> Intermediate</h3>
+        </div>
+
+    </div>
+
+    <!-- Back Button -->
+    <a href="index.html" class="back-btn">← Back to Home</a>
+
+</section>
+
+</body>
+</html>

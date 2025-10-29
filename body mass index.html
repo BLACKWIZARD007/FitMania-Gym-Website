@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bmi calculator</title>
+    <style>
+        body{
+            border: 0;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(29, 29, 29, 0.5),rgba(29, 29, 29, 0.5)),url("images/home-bg-1.jpg");
+            color:rgb(89, 255, 0); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+}
+
+
+    .Form{
+        width: 500px;
+        position: absolute;
+        padding: 5px;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        box-shadow: 2px 2px 20px rgb(89, 255, 0);
+        background-color: rgb(90, 90, 90);
+        border-radius: 20px;
+        
+    }
+    .btn{
+        color: black;
+        background-color: rgb(90, 90, 90);
+        border: none;
+        outline: none;
+        width: 150px;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .btn:hover{
+        background-color: rgb(89, 255, 0);
+        transition:all .2s linear ;
+    }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+
+<div class="Form">
+    <h2>BODY MASS INDEX CALCULATOR</h2>
+    <p class="text">Height</p>
+    <input type="text"  id="Height" placeholder="in cms">
+    <p class="text">Weight</p>
+    <input type="text"  id="Weight" placeholder="in kgs">
+    <p id="answer">Result:-</p>
+    <p id="output"> </p>
+
+    <button class="btn" onclick="bmi()">Calculate</button>
+    
+    <p class="info">Please enter Height in[cm] and Weight in [Kg].</p>
+</div>
+
+<script>
+    function bmi() {
+    const height = parseInt(document.getElementById('Height').value);
+    const weight = parseInt(document.getElementById('Weight').value);
+    const result = document.getElementById("output");
+
+    if(weight > 0 && height > 0){	
+    var finalBmi = (weight/((height*height)/10000)).toFixed(2);
+
+    document.getElementById("answer").innerHTML = "Your bmi is "+ finalBmi;
+    
+    if(finalBmi < 18.5){
+    result.innerHTML="You are so Thin";
+    }
+    
+    if(finalBmi > 18.5 && finalBmi < 25){
+    result.innerHTML="You are Healthy";
+    }
+    if(finalBmi > 25){
+    result.innerHTML="You are Overweight";
+    }
+    }
+    else{
+    alert("Please Fill in everything correctly")
+    }
+    }
+</script>
+</body>
+</html>
